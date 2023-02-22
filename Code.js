@@ -6,7 +6,7 @@ function include(filename) {
       .getContent();
 }
 function userClick(data) {
-  let ss = SpreadsheetApp.openById('1TVAAEJdc4Z6g9ZjnOoWpTeiNeKEQq2INyTYkgdCu0wA');
+  let ss = SpreadsheetApp.openById('SheetID');
   let sheet = ss.getSheets()[0];
   let response = Maps.newGeocoder().reverseGeocode(data.lat, data.lon);
   let geoAddress = response.results[0].formatted_address;
@@ -40,7 +40,7 @@ sendHttpPostImage(text_data1,mapBlob)
 }
 
 function sendHttpPostImage(mapUrl, mapBlob){
-var token = "eNvlFK1cxbAdGFr6gd75jzmeJ2wBsZFuhztBNverloX";
+var token = "Token";
 var formData = {
 'message' : '\n'+mapUrl,
 'imageFile': mapBlob
