@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+  <?!= include('Stylesheet') ?>
+</head>
+
+<body>
+    <div class="container">
+<form id="mainform" class="main">
+    <h1>ระบบเช็คอินการเข้าอยู่เวร</h1>
+    <div class="select1" >
+      <table style="width:100%">
+      <tr>
+        <td align="right"><h><b>ชื่อนามสกุลผู้อยู่เวร:</h></td>
+        <td><select id="username" class="dropbox">
+        <option value="-">กรุณาเลือกชื่อ</option>
+        <option value="นายวิชชา อินคำ">นายวิชชา อินคำ</option>
+        <option value="นายชุมพล บุญเกตุ">นายชุมพล บุญเกตุ</option>
+        <option value="นายเอกขจร ม่วงพันธ์">นายเอกขจร ม่วงพันธ์</option>
+        <option value="นายยุทธพงษ์ รอดคง">นายยุทธพงษ์ รอดคง</option>
+        <option value="นายกมลตรี กุลจิตติกานต์">นายกมลตรี กุลจิตติกานต์</option>
+        <option value="นายอดิศักดิ์ พรมน้อย">นายอดิศักดิ์ พรมน้อย</option>
+        <option value="นายพิทยา ศรีแสง">นายพิทยา ศรีแสง</option>
+        <option value="นายฉัตรชัย ทองแห้ว">นายฉัตรชัย ทองแห้ว</option>
+        <option value="นายสรรเพชร เกิดแสง">นายสรรเพชร เกิดแสง</option>
+        <option value="ส.อ.ฤทธิชัย ทอดเสียง">ส.อ.ฤทธิชัย ทอดเสียง</option>
+        <option value="นายจักรพันธ์ จันทร์ศรี">นายจักรพันธ์ จันทร์ศรี</option>
+        <option value="นายสมศักดิ์ สุขคร">นายสมศักดิ์ สุขคร</option>
+        <option value="นายศราวุฒิ ชาลีขวัญ">นายศราวุฒิ ชาลีขวัญ</option>
+        <option value="นายอำนวย ทองอ่อน">นายอำนวย ทองอ่อน</option>
+        <option value="นายพงศ์ภรณ์ ปิ่นแจ้ง">นายพงศ์ภรณ์ ปิ่นแจ้ง</option>
+        <option value="นายนิกร จันทร์สวัสดิ์">นายนิกร จันทร์สวัสดิ์</option>
+        <option value="นายโสภณ ตาสาย">นายโสภณ ตาสาย</option>
+        <option value="นายนรากร เทศเกตุ">นายนรากร เทศเกตุ</option>
+        <option value="นายเสมอ แจ้งเมือง">นายเสมอ แจ้งเมือง</option>
+        <option value="นายลิขิต วอนสร้อย">นายลิขิต วอนสร้อย</option>
+        <option value="นายถวรรค์ อยู่แก้ว">นายถวรรค์ อยู่แก้ว</option>
+        <option value="นายวีระวุฒิ อินทิม">นายวีระวุฒิ อินทิม</option>
+        <option value="นายวีรกร รุ่งเชตุ">นายวีรกร รุ่งเชตุ</option>
+        <option value="นายชัยสิทธิ แตงฤทธิ์">นายชัยสิทธิ แตงฤทธิ์</option>
+        <option value="นายนันทชัย แก้วมณี">นายนันทชัย แก้วมณี</option>
+        <option value="นายไพศาล สุวรรรรัตน์">นายไพศาล สุวรรรรัตน์</option>
+        <option value="นายจิรพนธ์ ปั้นเคลือบ">นายจิรพนธ์ ปั้นเคลือบ</option>
+        <option value="นายทิฏธิทัตต์ รุ่งเมือง">นายทิฏธิทัตต์ รุ่งเมือง</option>
+        <option value="นายชาญชัย น่วมทอง">นายชาญชัย น่วมทอง</option>
+        <option value="นายนพดล สุวรรณเกิด">นายนพดล สุวรรณเกิด</option>
+        <option value="นายประจักร มาอ่วม">นายประจักร มาอ่วม</option>
+        <option value="นายโกวิทย์ เพ็ชรทิม">นายโกวิทย์ เพ็ชรทิม</option>
+        <option value="นายยศพัฒน์ สังทรัพย์">นายยศพัฒน์ สังทรัพย์</option>
+        <option value="นายผดุงวิชญ์ อินทะรังสี">นายผดุงวิชญ์ อินทะรังสี</option>
+        <option value="นายเพิ่มพูน พรหมปัญญา">นายเพิ่มพูน พรหมปัญญา</option>
+        <option value="นายนิรุตติ์ ด้งพุก">นายนิรุตติ์ ด้งพุก</option>
+        <option value="นายวรวัฒน์ ทองทวี">นายวรวัฒน์ ทองทวี</option>
+        <option value="ว่าที่ ร.ต.วสันต์ รุ่งเมือง">ว่าที่ ร.ต.วสันต์ รุ่งเมือง</option>
+        <option value="นางสาวสุภกานต์ เข็มเพ็ชร">นางสาวสุภกานต์ เข็มเพ็ชร</option>
+        <option value="นางสาวเพลินตา ต่ายลำยงค์">นางสาวเพลินตา ต่ายลำยงค์</option>
+        <option value="นางสาววารุณี วังสุข">นางสาววารุณี วังสุข</option>
+        <option value="นางสาวนุจรีย์ ศรีปาน">นางสาวนุจรีย์ ศรีปาน</option>
+        <option value="นางสาวลักษณาพร อยู่ยิ่ง">นางสาวลักษณาพร อยู่ยิ่ง</option>
+        <option value="นางสาวอัญชลี สีปาน">นางสาวอัญชลี สีปาน</option>
+        <option value="นางสาวอาทิตรา เมฆไหว">นางสาวอาทิตรา เมฆไหว</option>
+        <option value="นางสาวนฤมล ชารีขวัญ">นางสาวนฤมล ชารีขวัญ</option>
+        <option value="นางสาวอังคณา คงรอด">นางสาวอังคณา คงรอด</option>
+        <option value="นางวิไลวรรณ์ โตเย็น">นางวิไลวรรณ์ โตเย็น</option>
+        <option value="นางสาวน้ำผึ้ง กล่อมบาง">นางสาวน้ำผึ้ง กล่อมบาง</option>
+        <option value="นางสายฝน โชติสุข">นางสายฝน โชติสุข</option>
+        <option value="นางสาวฐิตสา คตสุข">นางสาวฐิตสา คตสุข</option>
+        <option value="นางถาวร ตาสาย">นางถาวร ตาสาย</option>
+        <option value="นางละเอียด ปานหลาย">นางละเอียด ปานหลาย</option>
+        <option value="นางสาวชวนชม กลิ่นน้อย">นางสาวชวนชม กลิ่นน้อย</option>
+        <option value="นางสาวกิติยา เศวตเวช">นางสาวกิติยา เศวตเวช</option>
+        <option value="นางสาวพชรพรรณ ยังเหล็ก">นางสาวพชรพรรณ ยังเหล็ก</option>
+        <option value="นางสาวจิดาภา วรพงษ์ไพบูลย์">นางสาวจิดาภา วรพงษ์ไพบูลย์</option>
+        <option value="นางสาวสุพรรณี ไวคง">นางสาวสุพรรณี ไวคง</option>
+        <option value="นางสาวนันทา อินกล่ำ">นางสาวนันทา อินกล่ำ</option>
+        <option value="นางนันทิชา ชมแสงรัตน์">นางนันทิชา ชมแสงรัตน์</option>
+        <option value="นางเสาวลักษณ์ บุญเป้า">นางเสาวลักษณ์ บุญเป้า</option>
+      </select></td>
+      </tr>
+      <tr>
+        <td align="right"><h><b>ผู้อยู่เวรแทน:</h></td>
+        <td><select id="sub" class="dropbox">
+        <option value="-">กรุณาเลือกชื่อ</option>
+        <option value="นายวิชชา อินคำ">นายวิชชา อินคำ</option>
+        <option value="นายชุมพล บุญเกตุ">นายชุมพล บุญเกตุ</option>
+        <option value="นายเอกขจร ม่วงพันธ์">นายเอกขจร ม่วงพันธ์</option>
+        <option value="นายยุทธพงษ์ รอดคง">นายยุทธพงษ์ รอดคง</option>
+        <option value="นายกมลตรี กุลจิตติกานต์">นายกมลตรี กุลจิตติกานต์</option>
+        <option value="นายอดิศักดิ์ พรมน้อย">นายอดิศักดิ์ พรมน้อย</option>
+        <option value="นายพิทยา ศรีแสง">นายพิทยา ศรีแสง</option>
+        <option value="นายฉัตรชัย ทองแห้ว">นายฉัตรชัย ทองแห้ว</option>
+        <option value="นายสรรเพชร เกิดแสง">นายสรรเพชร เกิดแสง</option>
+        <option value="ส.อ.ฤทธิชัย ทอดเสียง">ส.อ.ฤทธิชัย ทอดเสียง</option>
+        <option value="นายจักรพันธ์ จันทร์ศรี">นายจักรพันธ์ จันทร์ศรี</option>
+        <option value="นายสมศักดิ์ สุขคร">นายสมศักดิ์ สุขคร</option>
+        <option value="นายศราวุฒิ ชาลีขวัญ">นายศราวุฒิ ชาลีขวัญ</option>
+        <option value="นายอำนวย ทองอ่อน">นายอำนวย ทองอ่อน</option>
+        <option value="นายพงศ์ภรณ์ ปิ่นแจ้ง">นายพงศ์ภรณ์ ปิ่นแจ้ง</option>
+        <option value="นายนิกร จันทร์สวัสดิ์">นายนิกร จันทร์สวัสดิ์</option>
+        <option value="นายโสภณ ตาสาย">นายโสภณ ตาสาย</option>
+        <option value="นายนรากร เทศเกตุ">นายนรากร เทศเกตุ</option>
+        <option value="นายเสมอ แจ้งเมือง">นายเสมอ แจ้งเมือง</option>
+        <option value="นายลิขิต วอนสร้อย">นายลิขิต วอนสร้อย</option>
+        <option value="นายถวรรค์ อยู่แก้ว">นายถวรรค์ อยู่แก้ว</option>
+        <option value="นายวีระวุฒิ อินทิม">นายวีระวุฒิ อินทิม</option>
+        <option value="นายวีรกร รุ่งเชตุ">นายวีรกร รุ่งเชตุ</option>
+        <option value="นายชัยสิทธิ แตงฤทธิ์">นายชัยสิทธิ แตงฤทธิ์</option>
+        <option value="นายนันทชัย แก้วมณี">นายนันทชัย แก้วมณี</option>
+        <option value="นายไพศาล สุวรรรรัตน์">นายไพศาล สุวรรรรัตน์</option>
+        <option value="นายจิรพนธ์ ปั้นเคลือบ">นายจิรพนธ์ ปั้นเคลือบ</option>
+        <option value="นายทิฏธิทัตต์ รุ่งเมือง">นายทิฏธิทัตต์ รุ่งเมือง</option>
+        <option value="นายชาญชัย น่วมทอง">นายชาญชัย น่วมทอง</option>
+        <option value="นายนพดล สุวรรณเกิด">นายนพดล สุวรรณเกิด</option>
+        <option value="นายประจักร มาอ่วม">นายประจักร มาอ่วม</option>
+        <option value="นายโกวิทย์ เพ็ชรทิม">นายโกวิทย์ เพ็ชรทิม</option>
+        <option value="นายยศพัฒน์ สังทรัพย์">นายยศพัฒน์ สังทรัพย์</option>
+        <option value="นายผดุงวิชญ์ อินทะรังสี">นายผดุงวิชญ์ อินทะรังสี</option>
+        <option value="นายเพิ่มพูน พรหมปัญญา">นายเพิ่มพูน พรหมปัญญา</option>
+        <option value="นายนิรุตติ์ ด้งพุก">นายนิรุตติ์ ด้งพุก</option>
+        <option value="นายวรวัฒน์ ทองทวี">นายวรวัฒน์ ทองทวี</option>
+        <option value="ว่าที่ ร.ต.วสันต์ รุ่งเมือง">ว่าที่ ร.ต.วสันต์ รุ่งเมือง</option>
+        <option value="นางสาวสุภกานต์ เข็มเพ็ชร">นางสาวสุภกานต์ เข็มเพ็ชร</option>
+        <option value="นางสาวเพลินตา ต่ายลำยงค์">นางสาวเพลินตา ต่ายลำยงค์</option>
+        <option value="นางสาววารุณี วังสุข">นางสาววารุณี วังสุข</option>
+        <option value="นางสาวนุจรีย์ ศรีปาน">นางสาวนุจรีย์ ศรีปาน</option>
+        <option value="นางสาวลักษณาพร อยู่ยิ่ง">นางสาวลักษณาพร อยู่ยิ่ง</option>
+        <option value="นางสาวอัญชลี สีปาน">นางสาวอัญชลี สีปาน</option>
+        <option value="นางสาวอาทิตรา เมฆไหว">นางสาวอาทิตรา เมฆไหว</option>
+        <option value="นางสาวนฤมล ชารีขวัญ">นางสาวนฤมล ชารีขวัญ</option>
+        <option value="นางสาวอังคณา คงรอด">นางสาวอังคณา คงรอด</option>
+        <option value="นางวิไลวรรณ์ โตเย็น">นางวิไลวรรณ์ โตเย็น</option>
+        <option value="นางสาวน้ำผึ้ง กล่อมบาง">นางสาวน้ำผึ้ง กล่อมบาง</option>
+        <option value="นางสายฝน โชติสุข">นางสายฝน โชติสุข</option>
+        <option value="นางสาวฐิตสา คตสุข">นางสาวฐิตสา คตสุข</option>
+        <option value="นางถาวร ตาสาย">นางถาวร ตาสาย</option>
+        <option value="นางละเอียด ปานหลาย">นางละเอียด ปานหลาย</option>
+        <option value="นางสาวชวนชม กลิ่นน้อย">นางสาวชวนชม กลิ่นน้อย</option>
+        <option value="นางสาวกิติยา เศวตเวช">นางสาวกิติยา เศวตเวช</option>
+        <option value="นางสาวพชรพรรณ ยังเหล็ก">นางสาวพชรพรรณ ยังเหล็ก</option>
+        <option value="นางสาวจิดาภา วรพงษ์ไพบูลย์">นางสาวจิดาภา วรพงษ์ไพบูลย์</option>
+        <option value="นางสาวสุพรรณี ไวคง">นางสาวสุพรรณี ไวคง</option>
+        <option value="นางสาวนันทา อินกล่ำ">นางสาวนันทา อินกล่ำ</option>
+        <option value="นางนันทิชา ชมแสงรัตน์">นางนันทิชา ชมแสงรัตน์</option>
+        <option value="นางเสาวลักษณ์ บุญเป้า">นางเสาวลักษณ์ บุญเป้า</option>
+      </select></td>
+  
+      </tr>
+      <tr>
+        <td align="right" ><h><b>อาคารของการเข้าอยู่เวร:</h>
+</td>
+        <td><select id="buiding" class="dropbox">
+        <option value="-">อาคาร</option>
+        <option value="ตึกหน้า">ตึกหน้า</option>
+        <option value="ตึกหลัง">ตึกหลัง</option>
+      </select></td>
+      </tr>
+      <tr>
+        <td align="right"  ><h><b>ช่วงเวลาในการอยู่เวร:</h>
+</td>
+        <td > <select id="timeset"class="dropbox">
+        <option value="-">เลือกเวลา</option>
+        <option value="กลางวัน">กลางวัน</option>
+        <option value="กลางคืน">กลางคืน</option>
+      </select></td>
+      </tr>
+      <tr>
+        <td align="right"  ><h><b>เหตุการณ์:</h>
+       </td>
+        <td><select id="situation" class="dropbox">
+        <option value="-">เหตุการณ์</option>
+        <option value="ปกติ">ปกติ</option>
+        <option value="ผิดปกติ">ผิดปกติ</option>
+      </select>
+      <input id="sit" class="dropbox" placeholder="สถานการณ์" ></input> 
+      <br></td>
+      </tr>
+    </table>
+  
+    </table>
+      </div>
+
+      <button id="btn" class="btn btn-primary" onclick="setTimeout(function() { alert('บันทึกข้อมูลเรียบร้อยแล้ว'); window.location.reload();}, 2500);">บันทึกข้อมูล</button>
+
+      </svg>
+    </form>
+    </div>
+    <script>
+        getLocation()
+        let lat, lon
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(position => {
+                    lat = position.coords.latitude
+                    lon = position.coords.longitude
+                });
+            }
+        }
+
+    </script>
+    <script>
+        document.getElementById("btn").addEventListener("click", saveData)
+
+        function saveData() {
+            event.preventDefault()
+            var data = {}
+            data.username = document.getElementById("username").value
+            data.sub = document.getElementById("sub").value
+            data.buiding = document.getElementById("buiding").value
+            data.timeset = document.getElementById("timeset").value
+            data.situation = document.getElementById("situation").value
+            data.sit = document.getElementById("sit").value
+
+            data.lat = lat
+            data.lon = lon
+            google.script.run.withSuccessHandler(saveSuccess).userClick(data)
+            document.getElementById("mainform").reset()
+        }
+        function saveSuccess(result) {
+            if (result) {
+                sweetAlert({
+                    text: "บันทึกข้อมูลเรียบร้อยแล้ว",
+                    icon: "success",
+                    timer: 5000
+                })
+            }
+        }
+    </script>
+</body>
+
+</html>
