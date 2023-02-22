@@ -1,0 +1,138 @@
+<style>
+body {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-attachmet:fixed;
+  background-size: cover;
+  background-image:url(https://images.unsplash.com/photo-1673950455470-d872dcec6eb1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+ 
+  font-family: 'Kanit', sans-serif;
+  font-size:20px ;
+}
+.h{
+  font-family: 'Kanit', sans-serif;
+  text-align: left;
+  font-size:45px ;
+}
+.h2{
+    font-family: 'Kanit', sans-serif;
+  font-size:35px ;
+}
+.main{
+  position: relactive;
+  height: 400px;
+  width: 650px;
+  background-color:#bdc3c7;
+  border-radius: 10px;
+  box-shadow: 0 0 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+
+}
+.selectnone {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  background: none;
+  border: 2px solid #932e3e;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .4s;
+  font-family: 'Kanit', sans-serif;
+  margin: 15px;
+}
+.dropbox{
+  -webkit-appearance: none;
+    padding: 7px 20px 7px 12px ; 
+    width: auto;
+    border: 1px solid #E8EAED;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 1px 3px -2px #9098A9;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    transition: all 150ms ease;
+    &:required:invalid
+      color: #5A667F;
+}
+
+
+button:hover {
+  width: 170px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
+}
+
+span, svg {
+  position: absolute;
+  color: #932e3e;
+  fill: transparent;
+  transition: .4s;
+}
+
+button:hover span {
+  transition: .4s;
+  font-size: 16px;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+  border: 2px solid transparent;
+  width: 50px;
+  border-left: 2px solid #932e3e;
+  border-bottom: 2px solid #932e3e;
+  animation: spin 2s 500ms forwards;
+}
+
+button:focus span {
+  color: transparent;
+}
+
+button:focus svg {
+  animation: check 500ms 2300ms forwards;
+}
+
+@keyframes spin {
+  80% {
+    border: 2px solid transparent;
+    border-left: 2px solid #932e3e;
+  }
+  100% {
+    transform: rotate(1080deg);
+    border: 2px solid #932e3e;
+  }
+}
+
+@keyframes check {
+  to {
+    fill: #932e3e;
+  }
+}
+
+@keyframes circle {
+  to {
+    border: 2px solid #932e3e;
+  }
+}
+  </style>
